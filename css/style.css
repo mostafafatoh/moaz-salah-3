@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+
+/* Offers Section start */
+/* height: 80vh; */
+#offers {
+    background: url(../Images/offer-background.jpg) center center/cover fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 0;
+    position: relative;
+    text-align: center;
+}
+
+#offers .offers-items-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+#offers .offers-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+#offers .offer-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+#offers .offers-items img {
+    width: 200px;
+}
+
+#offers h2 {
+    color: #e4b95b;
+}
+
+#offers .title p {
+    color: #fff;
+    font-weight: 500;
+}
+
+#offers .offers-items h3 {
+    font-size: 25px;
+    color: #fff;
+    margin: 15px 0;
+}
+
+#offers .offers-items p {
+    color: #fff;
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+#offers .offers-items span {
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+
+
+/* Slider navigation buttons */
+#offers .prev,
+#offers .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#offers .prev {
+    left: 10px;
+}
+
+#offers .next {
+    right: 10px;
+}
+
+#offers .prev:hover,
+#offers .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Offers Section end */
+
+
+.btn{
+    color: #fff;
+    background-color: #383848;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #e4b95b;
+    color: #383848;
+}

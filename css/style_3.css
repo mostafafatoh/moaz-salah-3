@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+}
+
+/* Gallery Section */
+#gallery {
+    background: url("../Images/offer-background.jpg") center center/cover;
+    padding: 3rem 0;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#gallery h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.img-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-gallery img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 15px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: transform 0.3s ease;
+}
+
+.img-gallery img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+/* Lightbox (Popup) */
+#boxContainer {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 999;
+}
+
+#boxItem {
+    width: 70%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+/* Control Buttons */
+#boxItem i {
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    transition: color 0.3s;
+}
+
+#boxItem i:hover {
+    color: #e4b95b;
+}
+
+#close {
+    top: 15px;
+    right: 20px;
+}
+
+#prev {
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#next {
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn{
+    color: #fff;
+    background-color: #383848;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #e4b95b;
+    color: #383848;
+}

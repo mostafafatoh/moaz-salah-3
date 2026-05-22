@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./css/style_2.css">
+    <script src="./js/main_2.js"></script>
+</head>
+<body>
+    <section id="menu">
+        <div class="container">
+            <div class="title">
+                <h2>Our Special Menu</h2>
+                <p>Order two and get third for free</p>
+            </div><!-- title -->
+            <div class="menu-items">
+                <div class="menu-items-left">
+                    <script>
+                        for (i = 0; i < 6; i++) {
+                            document.write(`
+                            <div class="menu-item">
+                            <img src="${menuItems[i].image}" alt="">
+                            <div>
+                            <h3>${menuItems[i].name} <span>
+                            ${menuItems[i].price}</span> </h3>
+                            <p>${menuItems[i].description}.</p>
+                            </div>
+                            </div><!-- menu-item -->
+                            `)   
+                        }
+                    </script>
+                </div><!-- menu-items-left -->
+                <div class="menu-items-right">
+                    <script>
+                        for (i = 6; i < 12; i++) {
+                            document.write(`
+                            <div class="menu-item">
+                            <img src="${menuItems[i].image}" alt="">
+                            <div>
+                            <h3>${menuItems[i].name} <span>
+                            ${menuItems[i].price}</span> </h3>
+                            <p>${menuItems[i].description}.</p>
+                            </div>
+                            </div><!-- menu-item -->
+                            `)  
+                        }
+                    </script>
+                </div><!-- menu-items-right -->
+            </div><!-- menu-items -->
+            <button class="btn btn-third">
+                <a href="#">Explore Full Menu</a>
+            </button>
+        </div><!-- container -->
+    </section>
+    <button type="submit" class="btnb"><a href="index_3.html" style="color: white;text-decoration: none;">Next Page (Food Gallery)</a></button>
+
+</body>
+</html>
